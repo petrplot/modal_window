@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="head" class="header ">
+            <div class="container ">
+                <div class="header__row ">
+                    <div class="header__logo">
+                <img src="./img/logo.svg" alt="logo">
+                    </div>
+                    <div class="header__auth auth">
+                        <div key="1" class="auth__hi ">
+                            <img src="./img/user-round.svg" alt="">
+                            <p>Привет, <span>Иван</span> </p>
+                        </div>
+                        <div key="2" class="auth__registr hidden ">
+                            <a class="link-popap" href="#reg"></a>
+                            <p>Зарегистрироваться</p>
+                        </div>
+                        <div key="3" class="auth__login login hidden">
+                            <img class="login" src="./img/arrow-right-to-line.svg" alt="">
+                            <a class="link-popap login" href="#log"></a>
+                            <p class="login">Войти</p>
+                        </div>
+                        <div key="4" class="auth__logout  logout">
+                            <img class="logout" src="./img/arrow-left-to-line.svg" alt="">
+                            <p class="logout">Выйти</p>
+                        </div>
+                    </div> 
+                </div>
+            
+            </div>
+            
+        </div>
+
+        <div class="content ">
+            <p class="">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Velit quas nulla reiciendis totam aspernatur facilis 
+                    blanditiis facere reprehenderit, magnam officiis nihil
+                    odio adipisci dignissimos, consequuntur et eos minus
+                    impedit natus consectetur sed rem alias? Adipisci 
+                    empore nulla saepe magnam dolorem? Animi deserunt quasi 
+                    ipsam. Esse eum amet repellendus at fugit voluptatem, placeat 
+                    perferendis magnam velit. Laborum possimus eum atque magni fuga 
+                    velit hic quidem deleniti. Alias, iure perferendis quae magnam 
+                    officiis sed facere temporibus? Est beatae dolores nihil! Quidem 
+                    distinctio, dolorem dicta facilis reprehenderit laborum minus, 
+                    officia illo et, 
+                    quasi veniam porro esse omnis velit magnam aliquid dolore mollitia optio.
+            </p>
+           
+        </div>
+    </div>
+    <div id="reg" class="modal">
+        <div class="modal__window">
+            <form action="#head" name="reg" id="f1" class="modal__content">
+                <a href="#fix" class="modal__close close-popap"><img src="./img/btn-close.svg" alt=""></a>
+                <div class="modal__header">
+                    <img class="modal__img" src="./img/logo.svg" alt="logo">
+                    <h2 class="modal__title">Зарегистрироваться</h2>
+                </div>
+                <div class="input__block">
+                    <div class="input__email">
+                        <p class="input__name">Имя</p>
+                        <div class="input__box">
+                            <input 
+                                data-pass="false"
+                                data-check="true"
+                                data-max="12"
+                                data-min="2"
+                                type="text" 
+                                class="input__inp" 
+                                placeholder="Введите имя"
+                                >
+                        </div>
+                    </div>
+                    <div class="input__email">
+                        <p class="input__name">Email</p>
+                        <div class="input__box">
+                            <input 
+                                data-pass="false"
+                                data-check="true"
+                                data-max="12"
+                                data-min="2"
+                                type="text" 
+                                class="input__inp" 
+                                placeholder="Введите электронную почту"
+                            >
+                        </div>
+                    </div>
+                    <div class="input__password ">
+                        <p class="input__name">Пароль</p>
+                        <div class="input__box" >
+                            <input 
+                                data-pass="true"
+                                data-check="true"
+                                data-max="16"
+                                data-min="6"
+                                type="password" 
+                                id="pass" 
+                                class="input__inp" 
+                                placeholder="Введите пароль"
+                            > 
+                            <img class="input__img" src="./img/eye-off.svg" id="eyeicon" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="checkbox__block">
+                    <label class="checkbox__label">
+                        <input type="checkbox" class="checkbox__inp">
+                       <span class="checkbox__text">Даю согласие на <a href="#">обработку персональных данных</a></span> 
+                    </label>
+                    <label class="checkbox__label">
+                        <input type="checkbox" class="checkbox__inp">
+                       <span class="checkbox__text">Ознакомлен с <a href="#">политикой обработки персональных данных</a></span> 
+                    </label>
+                    <label class="checkbox__label">
+                        <input type="checkbox" class="checkbox__inp">
+                       <span class="checkbox__text">Ознакомлен с <a href="#">Пользовательским соглашением</a></span> 
+                    </label>
+                </div>
+                <div class="btn__block">
+                        <button type="submit" class="btn">Зарегистрироваться</button>
+                </div>
+                <p class="link-modal"><a class="link-popap" href="#log">Уже зарегистрирован?</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="log" class="modal">
+        <div class="modal__window">
+            <form action="#" name="log" id="f2" class="modal__content">
+                <a href="#fix" class="modal__close close-popap"><img src="./img/btn-close.svg" alt=""></a>
+                <div class="modal__header">
+                    <img class="modal__img" src="./img/logo.svg" alt="logo">
+                    <h2 class="modal__title">Войдите в свой аккаунт</h2>
+                    <p>Добро пожаловать! Пожалуйста, введите свои данные.</p>
+                </div>
+                <div class="input__block">
+                    <div class="input__email">
+                        <p class="input__name">Email</p>
+                        <div class="input__box">
+                            <input 
+                                data-pass="false"
+                                data-check="true"
+                                data-max="12"
+                                data-min="2"
+                                type="text" 
+                                class="input__inp" 
+                                placeholder="Введите электронную почту"
+                            >
+                        </div>
+                    </div>
+                    <div class="input__password">
+                        <p class="input__name">Пароль</p>
+                        <div class="input__box" >
+                            <input 
+                                data-pass="false"
+                                data-check="true"
+                                data-max="16"
+                                data-min="6"
+                            
+                                type="password" 
+                                id="pass" 
+                                class="input__inp" 
+                                placeholder="Введите пароль"
+                            >
+                            <img class="input__img" src="./img/eye-off.svg" id="eyeicon" alt="">
+                        </div>
+                    </div>
+                </div>
+                <p class="link-foget"><a class="link-popap" href="#">Забыли пароль?</a></p>
+                <div class="btn__block">
+                        <button type="submit" class="btn">Войти</button>
+                </div>
+                <p class="link-modal"><a class="link-popap" href="#reg">Зарегистрироваться</a></p>
+            </div>
+        </div>
+    </div>
+    
+<script src="./js/index.js"></script>
+</body>
+</html>
